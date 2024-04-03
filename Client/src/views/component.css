@@ -1,0 +1,549 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    background: #3b82f6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 rgb(186, 220, 255);
+    transform: skewX(-15deg);
+    border: none;
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #8ec7ff;
+}
+
+.cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+.span {
+    transform: skewX(15deg)
+}
+
+.second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: #000000;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scrollbar-message::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar:hover {
+    width: 10px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+    background-color: #0088ff;
+    /* Set the color of the scrollbar thumb */
+}
+
+.scrollbar-hidden::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Set the color of the scrollbar track */
+}
+
+.over {
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.lastmessage {
+    width: 150px;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.bgfile {
+    background-color: rgba(0, 0, 0, 0.705);
+    backdrop-filter: blur(3px);
+}
+
+*:focus {
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.border {
+    border-bottom: 2px solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    /* Set your desired border width */
+    border-image: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-image-slice: 1;
+}
+
+.bordernot {
+    border: 2px solid;
+    /* Set your desired border width */
+    border-radius: 50px;
+    border-image: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-image-slice: 1;
+}
+
+.borderhover:hover {
+    position: relative;
+    border-left: 5px solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-image: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-image-slice: 1;
+}
+
+.borderavatar {
+    border: 2px solid;
+    /* Set your desired border width */
+    border-image: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-image-slice: 1;
+}
+
+.bordernot {
+    border: 2px solid;
+    /* Set your desired border width */
+    border-image: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-image-slice: 1;
+}
+
+
+.text {
+    background: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.textnot {
+    background: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bg {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.bgnot:hover {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(354deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.bghover:hover {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(354deg, rgba(252, 176, 69, 0.774) 0%, rgba(255, 0, 0, 0.815) 50%, rgba(131, 58, 180, 0.812) 100%);
+}
+
+.bgimg {
+    background-image: url('https://i.pinimg.com/600x315/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg');
+    background-position: center;
+}
+
+.loader {
+    position: relative;
+    width: 75px;
+    height: 100px;
+}
+
+.loader__bar {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 50%;
+    background: rgb(37, 117, 255);
+    transform-origin: center bottom;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.loader__bar:nth-child(1) {
+    left: 0px;
+    transform: scale(1, 0.2);
+    -webkit-animation: barUp1 4s infinite;
+    animation: barUp1 4s infinite;
+}
+
+.loader__bar:nth-child(2) {
+    left: 15px;
+    transform: scale(1, 0.4);
+    -webkit-animation: barUp2 4s infinite;
+    animation: barUp2 4s infinite;
+}
+
+.loader__bar:nth-child(3) {
+    left: 30px;
+    transform: scale(1, 0.6);
+    -webkit-animation: barUp3 4s infinite;
+    animation: barUp3 4s infinite;
+}
+
+.loader__bar:nth-child(4) {
+    left: 45px;
+    transform: scale(1, 0.8);
+    -webkit-animation: barUp4 4s infinite;
+    animation: barUp4 4s infinite;
+}
+
+.loader__bar:nth-child(5) {
+    left: 60px;
+    transform: scale(1, 1);
+    -webkit-animation: barUp5 4s infinite;
+    animation: barUp5 4s infinite;
+}
+
+.loader__ball {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 119, 255);
+    border-radius: 50%;
+    -webkit-animation: ball624 4s infinite;
+    animation: ball624 4s infinite;
+}
+
+@keyframes ball624 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    5% {
+        transform: translate(8px, -14px);
+    }
+
+    10% {
+        transform: translate(15px, -10px);
+    }
+
+    17% {
+        transform: translate(23px, -24px);
+    }
+
+    20% {
+        transform: translate(30px, -20px);
+    }
+
+    27% {
+        transform: translate(38px, -34px);
+    }
+
+    30% {
+        transform: translate(45px, -30px);
+    }
+
+    37% {
+        transform: translate(53px, -44px);
+    }
+
+    40% {
+        transform: translate(60px, -40px);
+    }
+
+    50% {
+        transform: translate(60px, 0);
+    }
+
+    57% {
+        transform: translate(53px, -14px);
+    }
+
+    60% {
+        transform: translate(45px, -10px);
+    }
+
+    67% {
+        transform: translate(37px, -24px);
+    }
+
+    70% {
+        transform: translate(30px, -20px);
+    }
+
+    77% {
+        transform: translate(22px, -34px);
+    }
+
+    80% {
+        transform: translate(15px, -30px);
+    }
+
+    87% {
+        transform: translate(7px, -44px);
+    }
+
+    90% {
+        transform: translate(0, -40px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes barUp1 {
+    0% {
+        transform: scale(1, 0.2);
+    }
+
+    40% {
+        transform: scale(1, 0.2);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    90% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1, 0.2);
+    }
+}
+
+@keyframes barUp1 {
+    0% {
+        transform: scale(1, 0.2);
+    }
+
+    40% {
+        transform: scale(1, 0.2);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    90% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1, 0.2);
+    }
+}
+
+@-webkit-keyframes barUp2 {
+    0% {
+        transform: scale(1, 0.4);
+    }
+
+    40% {
+        transform: scale(1, 0.4);
+    }
+
+    50% {
+        transform: scale(1, 0.8);
+    }
+
+    90% {
+        transform: scale(1, 0.8);
+    }
+
+    100% {
+        transform: scale(1, 0.4);
+    }
+}
+
+@keyframes barUp2 {
+    0% {
+        transform: scale(1, 0.4);
+    }
+
+    40% {
+        transform: scale(1, 0.4);
+    }
+
+    50% {
+        transform: scale(1, 0.8);
+    }
+
+    90% {
+        transform: scale(1, 0.8);
+    }
+
+    100% {
+        transform: scale(1, 0.4);
+    }
+}
+
+@-webkit-keyframes barUp3 {
+    0% {
+        transform: scale(1, 0.6);
+    }
+
+    100% {
+        transform: scale(1, 0.6);
+    }
+}
+
+@keyframes barUp3 {
+    0% {
+        transform: scale(1, 0.6);
+    }
+
+    100% {
+        transform: scale(1, 0.6);
+    }
+}
+
+@-webkit-keyframes barUp4 {
+    0% {
+        transform: scale(1, 0.8);
+    }
+
+    40% {
+        transform: scale(1, 0.8);
+    }
+
+    50% {
+        transform: scale(1, 0.4);
+    }
+
+    90% {
+        transform: scale(1, 0.4);
+    }
+
+    100% {
+        transform: scale(1, 0.8);
+    }
+}
+
+@keyframes barUp4 {
+    0% {
+        transform: scale(1, 0.8);
+    }
+
+    40% {
+        transform: scale(1, 0.8);
+    }
+
+    50% {
+        transform: scale(1, 0.4);
+    }
+
+    90% {
+        transform: scale(1, 0.4);
+    }
+
+    100% {
+        transform: scale(1, 0.8);
+    }
+}
+
+@-webkit-keyframes barUp5 {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    40% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1, 0.2);
+    }
+
+    90% {
+        transform: scale(1, 0.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes barUp5 {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    40% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1, 0.2);
+    }
+
+    90% {
+        transform: scale(1, 0.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+.bg-app{
+    
+}
